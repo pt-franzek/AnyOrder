@@ -1,0 +1,23 @@
+﻿@model Vidly.ViewModels.OrdersViewModel
+@{ 
+    ViewBag.Title = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Orders</h2>
+@if (Model.Orders.Count == 0)
+            {
+                <p>No orders are made.</p>
+            }
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Orders</th>
+    </tr>
+    @foreach (var order in Model.Orders)
+    {
+        <tr>
+            <td>@order.Summary</td>
+            <td>@order.Cost</td>
+        </tr>
+    }
+</table>
