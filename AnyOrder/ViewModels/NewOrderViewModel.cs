@@ -6,9 +6,9 @@ using AnyOrder.Models;
 
 namespace AnyOrder.ViewModels
 {
-    public class RandomOrderViewModel
+    public class NewOrderViewModel
     {
-        public MenuItem Order { get; set; }
-        public List<Customer> Customers { get; set; }
+        public List<MenuItem> Meals { get; set; }
+        public List<AddOn> AddOns { get; set; }
     }
 }

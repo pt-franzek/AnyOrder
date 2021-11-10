@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.OrdersViewModel
+﻿@model AnyOrder.ViewModels.OrdersViewModel
 @{ 
     ViewBag.Title = "Orders";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,6 +9,7 @@
             {
                 <p>No orders are made.</p>
             }
+
 <table class="table table-bordered table-hover">
     <tr>
         <th>Orders</th>
@@ -17,7 +18,7 @@
     {
         <tr>
             <td>@order.Summary</td>
-            <td>@order.Cost</td>
+            <td>@order.Price</td>
         </tr>
     }
 </table>

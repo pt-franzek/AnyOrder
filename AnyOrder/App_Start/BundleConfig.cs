@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Vidly
+namespace AnyOrder
 {
     public class BundleConfig
     {

@@ -8,11 +8,11 @@ using AnyOrder.ViewModels;
 
 namespace AnyOrder.Controllers
 {
-    public class OrdersController : Controller
+    public class NewOrderController : Controller
     {
-        [Route("orders")]
-        [Route("orders/orders")]
-        public ActionResult Orders()
+        [Route("newrder")]
+        [Route("neworder/neworder")]
+        public ActionResult NewOrder()
         {
             var orders = new List<MenuItem>
             {
